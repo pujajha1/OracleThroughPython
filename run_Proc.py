@@ -19,19 +19,7 @@ def run_Proc():
 	for mc in output1.getvalue():
 		print(mc[0],mc[1],mc[2],mc[3],mc[4],mc[5],mc[6],mc[7])
 	
-	print("-------------------------------------------")
-	
-	for mc in output2.getvalue():
-		print(mc[0],mc[1],mc[2],mc[3],mc[4],mc[5],mc[6],mc[7])
-	
-	print("--------------------------------------------")
-	
-	for mc in output3.getvalue():
-		print(mc[0],mc[1],mc[2],mc[3],mc[4],mc[5],mc[6],mc[7])
-	
-	print("--------------------------------------------")
- 
-    
+   
 	conn.close()
 	
 	
