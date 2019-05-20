@@ -1,4 +1,4 @@
-/* One Procedure to Select records from 3 table and Print */
+/* One Procedure to Select records from a table and Print */
 create or replace PACKAGE BODY package_example AS
 PROCEDURE proc_example(args1 type1%TYPE,args2 type2%TYPE,output1 OUT SYS_REFCURSOR)
 	IS
