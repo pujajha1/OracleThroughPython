@@ -1,6 +1,6 @@
 /* One Procedure to Select records from 3 table and Print */
 create or replace PACKAGE BODY package_example AS
-PROCEDURE proc_example(args1 type1%TYPE,args2 type2%TYPE,output1 OUT SYS_REFCURSOR,output2 OUT SYS_REFCURSOR,output3 OUT SYS_REFCURSOR)
+PROCEDURE proc_example(args1 type1%TYPE,args2 type2%TYPE,output1 OUT SYS_REFCURSOR)
 	IS
 	BEGIN
 			OPEN output1 FOR
@@ -8,18 +8,6 @@ PROCEDURE proc_example(args1 type1%TYPE,args2 type2%TYPE,output1 OUT SYS_REFCURS
             from  table1
              where
             roll_id=args1 and pin=args2
-OPEN output2 FOR
-        select *
-        from  table2
-        where
-        roll_id=args1 and pin=args2 
-       
-
-OPEN output3 FOR
-        select *
-        from  table3
-        where
-        roll_id=args1 and pin=args2 
        
 EXCEPTION
 		  WHEN OTHERS THEN
